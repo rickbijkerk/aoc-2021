@@ -21,9 +21,9 @@ fun main() {
 
         numberList.forEachIndexed { index, value ->
             if (numberList.size - 1 > index + 2) {
-                val currentWindow = value + numberList[index+1] + numberList[index+2]
-                val nextWindow = currentWindow - value + numberList[index+3]
-                if(nextWindow > currentWindow){
+                val currentWindow = value + numberList[index + 1] + numberList[index + 2]
+                val nextWindow = currentWindow - value + numberList[index + 3]
+                if (nextWindow > currentWindow) {
                     result++
                 }
             }
